@@ -1,7 +1,7 @@
 node {
   stage 'build'
   docker.image('uday/acmecorp-buildenv').inside {
-    git 'https://github.com/uday/docker-jenkins-demo-app.git'
+    git 'https://github.com/uaarkoti/docker-jenkins-demo-app.git'
     sh 'mvn install'
     archive 'target/*.war'
   }
