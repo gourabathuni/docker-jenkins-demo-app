@@ -11,4 +11,7 @@ node {
 
   stage 'deploy'
   sh './deploy.sh'
+
+  stage 'pause'
+  input 'Does everything look good?'
 }
